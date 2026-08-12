@@ -732,6 +732,12 @@ a:hover {
     gap: 16px;
     padding: 24px 0;
   }
+  .accordion-header:hover {
+    padding-left: 0;
+  }
+  .accordion-header:hover::before {
+    display: none;
+  }
   .acc-num { display: none; }
   .acc-title { font-size: 1.35rem; }
   
