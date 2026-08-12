@@ -687,15 +687,23 @@ a:hover {
    RESPONSIVE (Mobile)
    ========================================================================== */
 @media (max-width: 992px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+  .contacts {
+    padding: 60px 0;
+  }
   .hero {
     flex-direction: column;
     height: auto;
   }
   .hero-photo-half {
-    height: 35vh;
+    height: 40vh;
+    min-height: 300px;
   }
   .hero-text-half {
-    padding: 60px 24px;
+    padding: 40px 24px;
+    height: auto;
   }
   
   .about-editorial-grid, .contacts-wrapper {
@@ -722,11 +730,14 @@ a:hover {
   .accordion-header {
     grid-template-columns: auto 1fr auto;
     gap: 16px;
+    padding: 24px 0;
   }
   .acc-num { display: none; }
+  .acc-title { font-size: 1.35rem; }
   
   .contacts-map-side {
-    height: 400px;
+    height: 350px;
+    min-height: auto;
   }
 }
 
@@ -742,18 +753,25 @@ a:hover {
     width: 100%;
     background-color: var(--cream);
     flex-direction: column;
-    padding: 24px;
+    padding: 20px 24px 30px;
+    gap: 20px;
     border-bottom: 1px solid var(--line);
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 8px 0;
   }
   .nav-links.active {
     display: flex;
   }
   .nav-burger {
     display: block;
+    font-size: 1.8rem;
   }
   .navbar {
-    padding: 0 24px;
+    padding: 0 20px;
   }
   .footer-inner {
     flex-direction: column;
@@ -761,6 +779,6 @@ a:hover {
     text-align: center;
   }
   h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
+  h2 { font-size: 2rem; margin-bottom: 1rem; }
   .huge-phone { font-size: 1.8rem; }
 }
